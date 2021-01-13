@@ -17,20 +17,7 @@ function WeatherCheck() {
       setIsFocused(true);
     }
     if (event.type === "blur") {
-      if (
-        parentDiv.className ===
-          "weather-search-bar weather-search-bar_active" &&
-        closeIcon.className.baseVal === "clear-icon"
-      ) {
-        setIsFocused(false);
-      } else if (
-        clearable &&
-        parentDiv.className ===
-          "weather-search-bar weather-search-bar_active" &&
-        closeIcon.className.baseVal === "clear-icon clear-icon_active"
-      ) {
-        setIsFocused(false);
-      }
+      setIsFocused(false);
     }
     if (event.type === "mousedown") {
       if (
